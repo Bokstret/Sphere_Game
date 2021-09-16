@@ -15,7 +15,7 @@ public class BarrierColl : MonoBehaviour
             gameObject.tag = "Untagged";
             GetComponent<Renderer>().material.color = Color.Lerp(BarrierColor, BallColor, speed);
             Destroy(gameObject,0.2f);
-            Destroy(otherObj.gameObject, 0.5f);
+            Destroy(otherObj.gameObject, 0.2f);
         }
     }
 }
